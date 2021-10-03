@@ -1,2 +1,2 @@
 # Python
-Data Structures &amp; Algorithms
+Data Structures & Algorithms
