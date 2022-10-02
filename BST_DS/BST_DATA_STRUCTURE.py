@@ -38,20 +38,24 @@ class BinarySearchTreeNode:
         return elements
 
     def post_order_traversal(self):
+        # First visits Left node and then Right Node and then Root Node
         elements = []
-
+        
+        # visit Left Node
         if self.left:
             elements += self.left.post_order_traversal()
-
+            
+        # visit Right Node
         if self.right:
             elements += self.right.post_order_traversal()
-
+            
+        # visit Root node/ Base Node
         elements.append(self.data)
 
         return elements
 
     def pre_order_traversal(self):
-
+        # Visit Root node/ Base Node and then Left node and then Right Node
         elements = []
 
         elements.append(self.data)
